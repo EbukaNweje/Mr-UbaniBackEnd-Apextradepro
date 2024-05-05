@@ -27,10 +27,10 @@ exports.register = async (req, res, next)=>{
         const hash = bcrypt.hashSync(req.body.password, salt);
          const newUser = new User({
             password:hash,
+            userName: req.body.userName,
             email: req.body.email,
             fullName: req.body.fullName,
             phoneNumber: req.body.phoneNumber,
-            userName: req.body.userName
          })
          const token = jwt.sign({id:newUser._id, isAdmin:newUser.isAdmin}, process.env.JWT, {expiresIn: "15m"})
          newUser.token = token
