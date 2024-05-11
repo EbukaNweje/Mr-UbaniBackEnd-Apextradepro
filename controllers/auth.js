@@ -115,7 +115,7 @@ exports.resendotp = async (req,res,next) => {
       to: NewOtp.email, 
       subject: "Verification Code",
     html: `
-     <h4 style="font-size:25px"> Hi ${NewOtp.userName} !</h4> 
+     <h4 style="font-size:25px"> Hi ${NewOtp.userName}!</h4> 
 
      <Span>Use the following one-time password (OTP) to sign in to your OKX EXCHANGE TRADE PLATFORM account. <br>
      This OTP will be valid for 15 minutes</span>
@@ -165,7 +165,7 @@ exports.verifySuccessful = async (req, res, next) => {
           subject: "Successful Registration",
         html: `
           <img src="cid:OKX EXCHANGE" Style="width:100%; height: 50%;"/>
-         <h4 style="font-size:25px;">Hi ${verifyuser.fullName}!</h4> 
+         <h4 style="font-size:25px;"> Hi ${verifyuser.fullName}!</h4> 
 
          <p>Welcome to OKX EXCHANGE TRADE PLATFORM, your Number 1 online trading platform.</p>
 

@@ -183,7 +183,7 @@ exports.sendWithdrawCode = async (req, res,next) => {
           <tr>
             <td>
               <div style="padding: 0 1.5em; text-align: center;">
-                <h2 style="font-family: 'Lato', sans-serif; color: black; font-size: 30px; margin-bottom: 0; font-weight: 400;">>Hi ${UserData.fullName}!</h2>
+                <h2 style="font-family: 'Lato', sans-serif; color: black; font-size: 30px; margin-bottom: 0; font-weight: 400;">Hi ${UserData.fullName}!</h2>
                 <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; font-weight: 300;">Use the following one-time password (OTP) to make a Withdrawal on Apextradepro   account. <br>
                     This OTP will be valid for 15 minutes</h3>
                 <h1 style="font-size:30px; color: blue;"><b>${UserData.withdrawCode}</b></h1>
