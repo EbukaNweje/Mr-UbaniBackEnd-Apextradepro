@@ -124,7 +124,7 @@ const luxon = require('luxon')
 
 // Function to add 0.4% of the money invested after every 24 hours
 const addInterest = async (userId, planId, amount, totalDailyInterest) => {
-    let totalDailyInterest;
+    // let totalDailyInterest;
     try {
         const user = await UserModel.findById(userId);
         const plan = await PlansModel.findById(planId);
